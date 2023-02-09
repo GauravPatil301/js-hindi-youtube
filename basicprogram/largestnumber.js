@@ -25,3 +25,40 @@ if(num1 == num2){
 }else{
     console.log(Math.max(num1,num2)+" is greater")
 }
+
+//
+
+let year = 2020;
+
+if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
+  console.log(year + " is a Leap Year");
+} else {
+  console.log(year + " is not a Leap Year");
+}
+
+
+let year = 2019;
+
+let flag = (year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0) ? 1 : 0;
+if (flag === 1) {
+  console.log(year + " is a Leap Year");
+} else {
+  console.log(year + " is not a Leap Year");
+}
+
+let year = 2020;
+let leap;
+
+if (year % 400 === 0) {
+  leap = true;
+} else if (year % 4 === 0 && year % 100 !== 0) {
+  leap = true;
+} else {
+  leap = false;
+}
+
+if (leap) {
+  console.log(year + " is a leap year.");
+} else {
+  console.log(year + " is not a leap year.");
+}
