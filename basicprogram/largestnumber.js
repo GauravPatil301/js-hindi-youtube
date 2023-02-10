@@ -62,3 +62,18 @@ if (leap) {
 } else {
   console.log(year + " is not a leap year.");
 }
+
+// find largest among three numbers
+
+let num1 = 10, num2 = 20, num3 =30;
+// Comparing num1 with other numbers
+if((num1>= num2) && (num1>=num3)){
+  console.log(num1+ ' is the greatest');
+
+  //checking if num2 is greatest
+}else if(num2>=num1 && num2>=num3){
+  console.log(num2+" is the greatest");
+}else{
+  //num3 has to be greatest then if not above
+  console.log(num3+" is the greatest");
+}
