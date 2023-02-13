@@ -90,3 +90,45 @@ function isPrime(n) {
   // Loop runs between [2, n/2] rather than [2, n-1]
 
   
+
+
+  function isPrime(n) {
+    if (n < 2) {
+      return false;
+    }
+    for (let i = 2; i <= n / 2; i++) {
+      if (n % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+  
+  let n = 33;
+  let result = isPrime(n) ? "Prime" : "not Prime";
+  console.log("The number " + n + " is : " + result);
+  
+  // Time Complexity : O(N)
+  // Space Complexity : O(1)
+
+  
+
+  function isPrime(n) {
+    if (n < 2) {
+      return false;
+    }
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+      if (n % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+  
+  let n = 29;
+  let result = isPrime(n) ? "Prime" : "not Prime";
+  console.log("The number " + n + " is : " + result);
+  
+  // Time Complexity : O(√N)
+  // Space Complexity : O(1)
+  
