@@ -132,3 +132,49 @@ function isPrime(n) {
   // Time Complexity : O(√N)
   // Space Complexity : O(1)
   
+
+  function isPrime(n) {
+    if (n <= 1) {
+      return false;
+    } else if (n === 2) {
+      return true;
+    } else if (n % 2 === 0) {
+      return false;
+    }
+    for (let i = 3; i <= Math.sqrt(n); i += 2) {
+      if (n % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+  
+  let n = 29;
+  let result = isPrime(n) ? n + " is a Prime Number" : n + " is not a Prime Number";
+  console.log(result);
+  
+  // Time Complexity : O(√N)
+  // Space Complexity : O(1)
+
+  function checkPrime(n, i) {
+    // 0, 1 and negative numbers are not prime
+    if (n < 2) return false;
+  
+    // if this satisfies then its prime as we
+    // have completed recursion from 2 to n
+    if (i === n) return true;
+  
+    // Base cases
+    if (n % i === 0) return false;
+  
+    i += 1;
+    return checkPrime(n, i);
+  }
+  
+  let n = 37;
+  let i = 2;
+  let isPrime = checkPrime(n, i);
+  
+  let result = isPrime ? "Prime" : "not Prime";
+  console.log(n + " is : " + result);
+  
