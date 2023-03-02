@@ -1,4 +1,4 @@
-// Leaders in an array
+// Leaders in an array 
 
 // Javascript Function to print leaders in an array
   
