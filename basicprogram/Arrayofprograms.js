@@ -13,7 +13,7 @@ function printLeaders( arr, size)
                 break;
         }    
         if (j == size) // the loop didn't break
-            document.write(arr[i] + " ");
+            console.log(arr[i] + " ");
   }
 }
 // driver code 
