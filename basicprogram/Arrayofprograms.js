@@ -46,6 +46,21 @@ function reverseArray(array,start,end) {
 
 // Utility function to print an array 
 function printArray(arr,size){
-    
+    for(let i=0;i<size;i++){
+        console.log(arr[i])
+    }
 }
-        
+
+// Driver function to test above functions 
+
+let array = [1,2,3,4,5,6];
+let n = 6;
+// To print original array
+printArray(arr,n);
+
+//function calling 
+reverseArray(arr,0,n-1);
+console.log("Reversed array is:");
+
+// To print the Reversed array
+printArray(arr,n);
