@@ -23,3 +23,29 @@ function printLeaders( arr, size)
   
         // Function calling 
         printLeaders(arr, n); 
+
+
+
+
+// Write a program to reverse an array or string
+
+// Given an array (or string), the task is to reverse the array/string.
+
+// Iterative Javascript program to reverse an array 
+
+/* Function to reverse arr[] from start to end */ 
+function reverseArray(array,start,end) {
+    while(start < end){
+        let temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--
+    }
+}
+
+// Utility function to print an array 
+function printArray(arr,size){
+    
+}
+        
