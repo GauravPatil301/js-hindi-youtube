@@ -64,3 +64,16 @@ console.log("Reversed array is:");
 
 // To print the Reversed array
 printArray(arr,n);
+
+
+console.log(Array.from("hello"))  // [ 'h', 'e', 'l', 'l', 'o' ]
+
+let s = new Set([1,2])
+console.log(s)  //{1,2}
+
+Array.from(s); // [1,2]
+
+const arr = [1,2,3];
+console.log(Array.from(arr,it => it* 2))
+console.log(Array.from({length:5},(it,i)=>i * 2))
+console.log(Array.from({length:5},(it,i) => i * 2 +1))
