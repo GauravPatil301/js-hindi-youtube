@@ -66,6 +66,9 @@ console.log("Reversed array is:");
 printArray(arr,n);
 
 
+
+// Array from method used
+
 console.log(Array.from("hello"))  // [ 'h', 'e', 'l', 'l', 'o' ]
 
 let s = new Set([1,2])
