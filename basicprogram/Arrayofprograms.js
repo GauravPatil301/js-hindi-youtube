@@ -67,6 +67,7 @@ printArray(arr,n);
 
 
 
+
 // Array from method used
 
 console.log(Array.from("hello"))  // [ 'h', 'e', 'l', 'l', 'o' ]
