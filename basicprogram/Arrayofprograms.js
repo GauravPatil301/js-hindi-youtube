@@ -86,7 +86,6 @@ console.log(Array.from({length:5},(it,i) => i * 2 +1))
 
 // Given an array A[] consisting of only 0s, 1s, and 2s. The task is to write a function that sorts the given array. The functions should put all 0s first, then all 1s and all 2s in last.
 
-<script>
 // Javascript program to sort an array of 0, 1 and 2
 
 	// Sort the input array, the array is assumed to
@@ -147,4 +146,41 @@ console.log(Array.from({length:5},(it,i) => i * 2 +1))
 	printArray(arr, arr_size);
 	
 	// This code is contributed by rag2127
-</script>
+
+
+// Find Subarray with given sum | Set 1 (Non-negative Numbers)	
+
+// Given an array arr[] of non-negative integers and an integer sum, find a subarray that adds to a given sum.
+
+// Note: There may be more than one subarray with sum as the given sum, print first such subarray. 
+
+// A simple program to print subarray with sum as given sum
+ 
+// Returns ture if the there is subarray of arr[] with sum equal to sum otherwise returns false. Also, prints the result
+
+function subArraySum(arr, n, sum) {
+	// Pick a starting point
+	for(let i=0;i<n ;i++){
+		let currentSum = arr[i];
+		if( currentSum == sum){
+			console.log("Sum found at indexes " +i)
+			return;
+		} else{
+			// Try all subarrays strating with 'i'
+			for(let j=i+1 ; J < n; j++){
+				currentSum += arr[j];
+				if(currentSum == sum){
+					console.log("Sum found between indexes "+ i + " and  "+j);
+					return ;
+				}
+			}
+		}
+	}
+
+	console.log(" No Sub array found");
+	return ;
+}
+ 
+let arr = [15, 2,4,8,9,5,10,23];
+let n = arr.length;
+let sum = 23;
