@@ -184,3 +184,11 @@ function subArraySum(arr, n, sum) {
 let arr = [15, 2,4,8,9,5,10,23];
 let n = arr.length;
 let sum = 23;
+
+
+var house = ["1BHK", 25000, "2BHK", 50000, "Rent", true];
+// len contains the length of the array
+var len = house.length;
+for (var i = 0; i < len; i++)
+	console.log(house[i]);//Output 1BHK
+
