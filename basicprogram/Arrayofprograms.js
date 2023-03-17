@@ -185,10 +185,19 @@ let arr = [15, 2,4,8,9,5,10,23];
 let n = arr.length;
 let sum = 23;
 
-
+// Length property of an Array returns the length of an Array. The length of an Array is always one more than the highest index of an Array.
 var house = ["1BHK", 25000, "2BHK", 50000, "Rent", true];
 // len contains the length of the array
 var len = house.length;
 for (var i = 0; i < len; i++)
 	console.log(house[i]);//Output 1BHK
 
+
+	// : Accessing Array Elements of an Array in JavaScript are indexed from 0 so we can access array elements as follows.
+
+	var house = ["1BHK", 25000, "2BHK", 50000, "Rent", true];
+    console.log(house[0]+" cost= "+house[1]);
+    var cost_1BHK = house[1];
+    var is_for_rent = house[5];
+    console.log("Cost of 1BHK = "+ cost_1BHK);
+    console.log("Is house for rent = ")+ is_for_rent;
