@@ -201,3 +201,18 @@ for (var i = 0; i < len; i++)
     var is_for_rent = house[5];
     console.log("Cost of 1BHK = "+ cost_1BHK);
     console.log("Is house for rent = ")+ is_for_rent;
+
+
+
+	// Initializing while declaring
+    // Creates an array having elements 10, 20, 30, 40, 50
+    var house = new Array(10, 20, 30, 40, 50);
+      
+    // Creates an array of 5 undefined elements
+    var house1 = new Array(5);
+      
+    // Creates an array with element 1BHK
+    var home = new Array("1BHK");
+    console.log(house)
+    console.log(house1)
+    console.log(home)
