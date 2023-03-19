@@ -216,3 +216,7 @@ for (var i = 0; i < len; i++)
     console.log(house)
     console.log(house1)
     console.log(home)
+
+	// Converting Arrays to Strings
+	const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
