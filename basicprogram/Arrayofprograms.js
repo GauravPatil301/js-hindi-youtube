@@ -220,3 +220,18 @@ for (var i = 0; i < len; i++)
 	// Converting Arrays to Strings
 	const fruits = ["Banana", "Orange", "Apple", "Mango"];
 document.getElementById("demo").innerHTML = fruits.join(" * ");
+
+// Move all negative numbers to beginning and positive to end with constant extra space
+// JavaScript Code for the same approach
+ 
+function move(arr){
+    arr.sort();
+}
+ 
+// driver code
+   
+let arr = [ -1, 2, -3, 4, 5, 6, -7, 8, 9 ];
+move(arr);
+for (let e of arr)
+    document.write(e , " ");
+   
