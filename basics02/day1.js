@@ -55,3 +55,37 @@ let palindrome = function (x) {
     return x === reverseNum;
 }
 
+// Question 5: Find nth fibonacci number
+// The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1.
+
+let fibonacci= function (n) {
+    if(n <  2){
+        return n;
+    }
+    let previous = 0, current = 1, next;
+    for(let i=2;i<=n;i++){
+        next = previous + current;
+        previous = current;
+        current = next;
+    }
+    return next;
+}
+// fibonacci sequence: 0 1 1 2 3 5 8...
+console.log(fibonacci(5)) //5
+console.log(fibonacci(10)) //55
+
+// Question 6: Missing Number
+// Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+
+let missingNumber = function(nums) {
+    let sum = 0;
+    for(let i=0;i<nums.length;i++){
+        sum += nums[i];
+    }
+    return nums.length*(nums.length+1)/2 - sum;
+};
+
+// one line solution:
+let missingNumber = (nums) => nums.length*(nums.length+1)/2 - nums.reduce((acc,num)=> num + acc);
+console.log(missingNumber[3,0,1]) // 2
+console.log(missingNumber[9,6,4,2,3,5,7,0,1]) // 8
