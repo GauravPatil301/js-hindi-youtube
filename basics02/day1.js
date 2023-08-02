@@ -89,3 +89,27 @@ let missingNumber = function(nums) {
 let missingNumber = (nums) => nums.length*(nums.length+1)/2 - nums.reduce((acc,num)=> num + acc);
 console.log(missingNumber[3,0,1]) // 2
 console.log(missingNumber[9,6,4,2,3,5,7,0,1]) // 8
+
+
+// Question 7 
+// 1523. Count Odd Numbers in an Interval Range
+ 
+let countOdds = function (low,high) {
+    let counter =0;
+    for(let i=low;i<=high;i++){
+        if(i%2!=0){
+            counter++;
+        }
+    }
+    return counter;
+}
+
+// one line solution
+let countOdds = function (low,high) {
+    return Math.floor((high+1)/2) - Math.floor(low/2);
+}
+
+// Test Case
+const low = 3;
+const high = 14;
+console.log(countOdds(low,high))// output 6
