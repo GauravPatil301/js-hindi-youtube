@@ -113,3 +113,44 @@ let countOdds = function (low,high) {
 const low = 3;
 const high = 14;
 console.log(countOdds(low,high))// output 6
+
+// Question
+// Given an integer n, return a string array answer (1-indexed) where:
+// Fizz Buzz
+// answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
+// answer[i] == "Fizz" if i is divisible by 3.
+// answer[i] == "Buzz" if i is divisible by 5.
+// answer[i] == i (as a string) if none of the above conditions are true.
+
+
+var fizzBuzz = function(n) {
+    const answer =[];
+    for(let i=1;i<=n;i++){
+        if(i%15 ===0){
+            answer.push("FizzBuzz");
+        } else if(i%3===0){
+            answer.push("Fizz");
+        } else if(i%5===0){
+            answer.push("Buzz");
+        }else{
+            answer.push(i.toString())
+        }
+    }
+    return answer;
+};
+
+// Power of Two
+// Given an integer n, return true if it is a power of two. Otherwise, return false.
+
+// An integer n is a power of two, if there exists an integer x such that n == 2x.
+
+var isPowerOfTwo = function(n) {
+
+    return n > 0 && (n & (n-1)) === 0;
+};
+
+// Find the square root of number
+
+var mySqrt = function(x) {
+    return Math.floor(Math.sqrt(x));
+};
