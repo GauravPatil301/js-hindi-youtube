@@ -123,3 +123,21 @@ console.log(missingNumber([9,6,4,2,3,5,7,0,1])) //8
 - [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)
 - [Power of Two](https://leetcode.com/problems/power-of-two/)
 - [Find Square root of a Number](https://leetcode.com/problems/sqrtx/)
+
+### Question 5: LeetCode 14 Longest Common Prefix
+
+```javascript
+var longestCommonPrefix = function(strs) {
+    if(strs.length == 0){
+        return ""
+    }
+    for(let i=0;i<strs[0].length;i++){
+        for(let j=1;j<strs.length;j++){
+            if(strs[0][i] != strs[j][i]){
+                return strs[0].slice(0,i);
+            }
+        }
+    }
+    return strs[0];
+};
+```
