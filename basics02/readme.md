@@ -141,11 +141,8 @@ var longestCommonPrefix = function(strs) {
     return strs[0];
 };
 ```
+```javascript
 
-/**
- * @param {number[]} nums
- * @return {void} Do not return anything, modify nums in-place instead.
- */
 var moveZeroes = function(nums) {
     let count = 0;
     for(let i=0;i<nums.length;i++){
@@ -157,3 +154,5 @@ var moveZeroes = function(nums) {
         nums[count++] =0;
     }
 };
+
+```
