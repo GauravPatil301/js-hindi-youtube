@@ -156,3 +156,24 @@ var moveZeroes = function(nums) {
 };
 
 ```
+
+
+### leetcode 28 Find the Index of the First Occurrence in a String
+
+```javascript
+ar strStr = function(haystack, needle) {
+    if(haystack === needle || needle === ""){
+        return 0;
+    }
+    for(let i=0;i<haystack.length;i++){
+        if(haystack[i] === needle[0]){
+            let sub = haystack.substring(i,i+needle.length)
+            if(sub === needle){
+                return i;
+            }
+        }
+    }
+    return -1;
+};
+
+```
